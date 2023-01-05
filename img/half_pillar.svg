@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="278.914" height="3475.066" viewBox="0 0 278.914 3475.066">
+  <defs>
+    <filter id="half_pillar" x="0" y="0" width="278.914" height="3475.066" filterUnits="userSpaceOnUse">
+      <feOffset dx="-15" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#half_pillar)">
+    <path id="half_pillar-2" data-name="half_pillar" d="M1483.28,1195c54.5.227,248.679,0,248.679,0v339.231s.528,3095.415,0,3105.608c-46.427.512-72.045,0-98.934,0-10.374,0-.289-3105.608,0-3105.608-1.588-33.926-19.049-97.733-23.282-107.7C1605.51,1413.9,1570.058,1296.255,1483.28,1195Z" transform="translate(-1453.28 -1180)" fill="#bdbdbd"/>
+  </g>
+</svg>
