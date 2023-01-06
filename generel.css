@@ -39,6 +39,7 @@ main {
 html {
     /*font customproperty*/
     --overskrift_font: 'impact';
+
     /*farve customproperty*/
     --primaer_bg: #CBC9C9;
     --sekundaer_bg: white;
@@ -48,6 +49,7 @@ html {
     --sekundaer_text: #010101;
     --primaer_tlf_text: #2A2A2A;
 }
+
 /*primæresider font*/
 h1 {
     font-family: var(--overskrift_font);

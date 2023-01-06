@@ -17,11 +17,15 @@ img {
     display: block
 }
 
-button {
+a {
     padding: 25px 70px;
     border-radius: 50px;
     border: none;
     background: linear-gradient(to top right, #5D5D5D 0%,#BDBDBD 50%, white 100%);
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--sekundaer_text);
+    text-align: center;
 }
 button>p {
     font-size: 2rem;
