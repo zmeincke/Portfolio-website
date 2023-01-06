@@ -1,0 +1,35 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--primaer_text);
+    background-color: var(--primaer_bg);
+}
+
+img {
+    width:100%;
+    height: auto;
+    display: block
+}
+
+html {
+    /*font customproperty*/
+    --overskrift_font: impact;
+    /*farve customproperty*/
+    --primaer_bg: #CBC9C9;
+    --sekundaer_bg: white;
+    --gennemsigtig_bg: rgb(0,0,0,21);
+
+    --primaer_text: white;
+    --sekundaer_text: #010101;
+    --primaer_tlf_text: #2A2A2A;
+}
+
+h2 {
+    font-family: var(--primaer_text);
+}

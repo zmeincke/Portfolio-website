@@ -1,0 +1,127 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--primaer_text);
+    background-color: var(--primaer_bg);
+}
+
+img {
+    width:100%;
+    height: auto;
+    display: block
+}
+
+html {
+    /*font customproperty*/
+    --overskrift_font: impact;
+    /*farve customproperty*/
+    --primaer_bg: #CBC9C9;
+    --sekundaer_bg: white;
+    --gennemsigtig_bg: rgb(0,0,0,21);
+
+    --primaer_text: white;
+    --sekundaer_text: #010101;
+    --primaer_tlf_text: #2A2A2A;
+}
+
+nav {
+    display: none;
+}
+
+section#intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2px;
+    align-items: center;
+    text-align: center;
+
+    /*placering*/
+    position: absolute;
+    top: 5%;
+    left: 18%;
+}
+h1 {
+    grid-column: span 4;
+    grid-row: 1/2;
+
+    font-size: 4rem;
+}
+.lodret_streg{
+    display: none;
+}
+.vandret_streg {
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    rotate: 90deg;
+}
+.navn_stud {
+    grid-column: 1/5;
+    grid-row: 2/3;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.navn_stud > h2 {
+    font-size: 2rem;
+}
+.navn_stud > h3 {
+    font-size: 1rem;
+} 
+
+#pp_buttons {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+
+    /*placering*/
+    position: absolute;
+    top: 36%;
+    left: 15%;
+}
+button#profil {
+    grid-row: 1/2;
+}
+button#projekter {
+    grid-row: 2/3;
+}
+
+@media (min-width: 600px) {
+    section#intro {
+        display: grid;
+        grid-template-columns: 3fr 0.5fr 4fr;
+        gap: 5px;
+        align-items: center;
+    
+        /*placering*/
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+    h1 {
+        grid-column: 1/2;
+    }
+    .lodret_streg {
+        grid-column: 2/3;
+    
+        font-size: 4rem;
+    }
+    .vandret_streg {
+        display: none;
+    }
+    .navn_stud {
+        grid-column: 3/4;
+    
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+}
