@@ -6,32 +6,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="noindex">
 
-        <link rel="stylesheet" href="css/animation.css">
-        <link rel="stylesheet" href="css/generel.css">
+        <link rel="stylesheet" href="animation.css">
+        <link rel="stylesheet" href="generel.css">
+        <link rel="stylesheet" href="burgermenu.css">
         <link rel="stylesheet" href="css/projekter.css">
-        
+
         <title>Portfolio</title>
     </head>
     <body>
         <header> 
-            <nav>
-                <a href="index.html">Forside</a>
-                <a href="profil.html">Profil</a>
-                <a href="projekter.html">Projekter</a>
-                <p>-</p>
-                <a href="tema1_intro.html">T1: Intro</a>
-                <a href="tema2_web.html">T2: Web</a>
-                <a href="tema3_ux.html">T3: UX</a>
-                <a href="tema4_animation.html">T4: Animation</a>
-                <a href="tema5_indhold.html">T5: Indhold</a>
-                <a href="tema6_portfolio.html">T6: Portfolio</a>
+            <nav id="main_menu">
+                <button class="toggle_button"></button>
+                <div id="logo"><a href="index.html"><img src="img/favicon.svg" alt="logo"></a></div>
+                <ul class="ul_menu">
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="projekter.html">Projekter</a></li>
+                    <li><p>-</p></li>
+                    <li><a class="menu_t" href="tema1_intro.html">T1: Intro</a></li>
+                    <li><a class="menu_t" href="tema2_web.html">T2: Web</a></li>
+                    <li><a class="menu_t" href="tema3_ux.html">T3: UX</a></li>
+                    <li><a class="menu_t" href="tema4_animation.html">T4: Animation</a></li>
+                    <li><a class="menu_t" href="tema5_indhold.html">T5: Indhold</a></li>
+                    <li><a class="menu_t" href="tema6_portfolio.html">T6: Portfolio</a></li>
+                </ul>
             </nav>  
         </header>
     
         <main id="side3_projekter">
             <section id="projekter">
                 <h1>Projekter</h1>
-                <img class="display_none" src="" alt="streg"> <!--fjern fra pc-->
+                <img class="display_none" src="img/streg.svg" alt="streg"> <!--fjern fra pc-->
                 <p>Temaerne her er projekter fra 1. semester på kea multimediedesign hold c i perioden 22/08-22 til 11/01-23.</p>
             </section>
             <div>

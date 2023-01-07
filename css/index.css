@@ -9,6 +9,8 @@ body {
     line-height: 1.6;
     color: var(--primaer_text);
     background-color: var(--primaer_bg);
+
+    overflow: hidden;
 }
 
 img {
@@ -62,7 +64,7 @@ h1 {
     position: absolute;
     top: 8%;
     left: 5%;
-    rotate: 90deg;
+    transform: rotate(90deg);
 }
 .navn_stud {
     grid-column: 1/5;

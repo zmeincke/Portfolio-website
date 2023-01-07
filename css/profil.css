@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: var(--primaer_text);
+    color: var(--sekundaer_text);
     background-color: var(--primaer_bg);
 }
 
@@ -30,3 +30,132 @@ html {
     --primaer_tlf_text: #2A2A2A;
 }
 
+h1 {
+    grid-column: span 4;
+    grid-row: 1/2;
+
+    font-size: 4rem;
+}
+.lodret_streg{
+    display: none;
+}
+
+.navn_stud {
+    grid-column: 1/5;
+    grid-row: 2/3;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.navn_stud > h2 {
+    font-size: 2rem;
+}
+.navn_stud > h3 {
+    font-size: 1rem;
+} 
+
+section#profil {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+section#profil>img.vandret_streg {
+    max-width: 120px;
+    max-height: 20px;
+
+    margin-bottom: 20px;
+}
+
+#potraet_mobil {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+#potraet_pc {
+    display: none;
+}
+
+.navn_stud {
+    grid-column: span 4;
+    grid-row: 3/4;
+}
+
+figure.upper {
+    max-width: 120px;
+    max-height: 20px;
+
+    grid-column: span 2;
+
+    justify-self: center;
+    margin-bottom: 20px;
+    
+    /* position: absolute;
+    top: 46%;
+    left: 48%; */
+}
+
+#privat_information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px 20px;
+}
+
+#privat_information li {
+    list-style-type: none;
+}
+
+#type, #svar{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+
+figure.lower {
+    max-width: 120px;
+    max-height: 20px;
+
+    grid-column: span 2;
+
+    justify-self: center;
+    margin-top: 20px;
+    /* position: absolute;
+    top: 75%;
+    left: 48%; */
+}
+
+#vigtige_papirer {
+    display: flex;
+    flex-flow: column;
+
+    margin: 20px;
+}
+
+.download_icon {
+    max-width: 40px;
+}
+
+.download_knap {
+    display: flex;
+}
+
+#om_mig, #privat_liv {
+    display: grid;
+    grid-template-columns: 0.2fr 2fr;
+
+    margin: 10px 20px;
+}
+
+.tekster_profil h4 {
+    grid-column: span 2;
+    font-size: 1.5rem;
+}
+
+.tekster_profil p {
+    grid-column: 2/3;
+    font-stretch: condensed;
+    font-style: italic;
+    font-size: 1rem;
+    margin: 5px 0px;
+}

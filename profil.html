@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="noindex">
 
-        <link rel="stylesheet" href="css/animation.css">
-        <link rel="stylesheet" href="css/generel.css">
+        <link rel="stylesheet" href="animation.css">
+        <link rel="stylesheet" href="generel.css">
         <link rel="stylesheet" href="burgermenu.css">
         <link rel="stylesheet" href="css/profil.css">
         
@@ -15,9 +15,9 @@
     </head>
     <body>
         <header> 
-            <div id="logo"><a href="index.html"><img src="img/favicon.svg" alt="logo"></a></div>
             <nav id="main_menu">
                 <button class="toggle_button"></button>
+                <div id="logo"><a href="index.html"><img src="img/favicon.svg" alt="logo"></a></div>
                 <ul class="ul_menu">
                     <li><a href="index.html">Forside</a></li>
                     <li><a href="profil.html">Profil</a></li>
@@ -27,74 +27,87 @@
         </header>
     
         <main id="side2_profil">
-            <section>
+            <section id="profil">
                 <h1>Profil</h1>
-                <img src="" alt="streg">
-                <img class="display_none" src="" alt="profil_pic"> <!--fjern fra pc-->
+                <img class="vandret_streg" src="img/streg_dark.svg" alt="streg">
+                <p class="lodret_streg"> | </p>
+                <img id="potraet_mobil" class="display_none" src="img/potraert1.webp" alt="profil_pic"> <!--fjern fra pc-->
                 <div class="navn_stud">
                     <h2>Zasia V. Meincke</h2>
                     <h3>KEA, Multimediedesign</h3>
                 </div>
             </section>
             <figure class="display_none_mobil"> <!--fjern fra mobil-->
-                <img src="" alt="profil_pic">
-            </figure>
-            <figure class="opdeler display_none"> <!--fjern fra pc-->
-                <img src="" alt="streg">
+                <img id="potraet_pc" class="display_none" src="img/potraert1.webp" alt="profil_pic">
             </figure>
             <div id="privat_information">
+                <figure class="opdeler upper display_none"> <!--fjern fra pc-->
+                    <img src="img/streg_dark.svg" alt="streg">
+                </figure>
                 <div id="type">
-                    <ul id="foedsel">
+                    <ul id="foedsel_sp">
                         <li>Fødselsdag:</li>
                         <li>Køn:</li>
                     </ul>
-                    <ul id="bosted">
+                    <ul id="bosted_sp">
                         <li>Adresse:</li>
                         <li>Postnr./By:</li>
                     </ul>
-                    <ul id="kontakt_information">
+                    <ul id="kontakt_information_sp">
                         <li>Mail:</li>
                         <li>Mobil nr.:</li>
                     </ul>
                 </div>
                 <div id="svar">
-                    <ul id="foedsel">
+                    <ul id="foedsel_sv">
                         <li>23/10-2001</li>
                         <li>Kvinde</li>
                     </ul>
-                    <ul id="bosted">
+                    <ul id="bosted_sv">
                         <li>Torslundevej 11</li>
                         <li>2635, Ishøj</li>
                     </ul>
-                    <ul id="kontakt_information">
-                        <li>Zasia.Meincke@gamil.com</li>
+                    <ul id="kontakt_information_sv">
+                        <li>Zasia.Meincke@gmail.com</li>
                         <li>+45 40473077</li>
                     </ul>
                 </div>
+                <figure class="opdeler lower">
+                    <img src="img/streg_dark.svg" alt="streg">
+                </figure>
             </div>
-            <figure class="opdeler">
-                <img src="" alt="streg">
-            </figure>
             <div id="vigtige_papirer">
-                <div id="karakterblad" class="download_knap">
-                    <img src="" alt="download">
-                    <p>Download Karekterblad HTX</p>
-                </div>
                 <div id="cv" class="download_knap">
-                    <img src="" alt="download">
+                    <img class="download_icon" src="img/icon_download_dark.svg" alt="download">
                     <p>Download CV</p>
                 </div>
+                <div id="karakterblad" class="download_knap">
+                    <img class="download_icon" src="img/icon_download_dark.svg" alt="download">
+                    <p>Download Karekterblad HTX</p>
+                </div>
             </div>
-            <section id="om_mig">
+            <section id="om_mig" class="tekster_profil">
                 <h4>"Lad mig præsentere mig selv"</h4>
                 <p>
-                    bla bla bla
+                    Jeg er en ung pige på 21, der elsker at være både kreativ og aktiv.
+                </p>
+                <p> 
+                    Det meste af mit liv har jeg bestræbet mig på, at udfolde og forbedre mig i min kreative kunnen.
+                </p>
+                <p>
+                    Dette har ført mig til at studere multimediedesign på københavns erhvers akademi hvor jeg både finder nye bekendtskaber og ny viden, som jeg i sidste ende vil tage med når jeg engang skal ud på arbejdsmarked.
+                </p>
+                <p>
+                    Jeg er så heldig at kunne blande min kreativitet og forkærlighed for natur I forbindelse med spejder, som jeg har engageret mig for siden jeg var helt lille og til den dag i dag.
                 </p>
             </section>
-            <section id="privat_liv">
-                <h4>Mit privat liv</h4>
+            <section id="privat_liv" class="tekster_profil">
+                <h4>"Sådan er mit privat liv"</h4>
                 <p>
-                    bla bla bla
+                    Min familie er hvad man ville betragte som en klassisk kernefamilie med ældre traditioner. Vi er ikke en stor familie men det gør kun at vi har et tættere sammenhold og nærvær end mange andre familier.
+                </p>
+                <p>
+                    For mig er det vigtigt at dyrke familien og holde fast i traditioner, men der skal samtidig være plads til det nye og jeg afholder mig ikke fra at kaste mig ud i det ukendte.
                 </p>
             </section>
         </main>

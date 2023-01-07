@@ -15,13 +15,12 @@ body {
     height: 100%;
     width: 100%;
     aspect-ratio: 1/3;
-    position: absolute;
-    top: 0%;
-    left: 0%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-image: url(img/svale_arch.svg);
     background-size: cover;
-    overflow: hidden;
-    z-index: 1;
+    /* overflow: hidden; */
+    z-index: 0;
 }
 
 img {
@@ -39,6 +38,7 @@ main {
 html {
     /*font customproperty*/
     --overskrift_font: 'impact';
+    --text_font: Arial, sans-serif;
 
     /*farve customproperty*/
     --primaer_bg: #CBC9C9;
