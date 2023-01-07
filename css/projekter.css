@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: var(--primaer_text);
+    color: var(--primaer-tlf_text);
     background-color: var(--primaer_bg);
 }
 
@@ -30,6 +30,56 @@ html {
     --primaer_tlf_text: #2A2A2A;
 }
 
-h2 {
-    font-family: var(--primaer_text);
+section#projekter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+h1 {
+    color: var(--sekundaer_text);
+}
+
+section#projekter>img.vandret_streg {
+    max-width: 120px;
+    max-height: 20px;
+
+    margin-bottom: 20px;
+}
+
+#bokse {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.boks {
+    border: 5px solid var(--sekundaer_text);
+    padding: 5px 10px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+
+    background: linear-gradient(to bottom, #010101 0%,#010101 45%, #01010159 45%, #01010159 100%);
+}
+
+.boks h2 {
+    font-family: var(--overskrift_font);
+    font-size: 2.5rem;
+    color: var(--primaer_text);
+
+    max-height: 50px;
+}
+
+.boks p {
+    font-size: 1.5rem;
+    line-height: 25px;
+    margin: 20px 0px 15px 0px;
+
+    /* max-height: 50px; */
 }
