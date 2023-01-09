@@ -40,6 +40,15 @@ html {
     min-width: 150px;
     font-size: 1.5rem;
 }
+#design_dok_buttons :first-child {
+    max-width: 250px;
+}
+#design_dok_buttons :last-child {
+    max-width: 250px;
+}
+.download_button span:first-child {
+    min-width: 180px;
+}
 
 /*site grid*/
 main#tema4 {
@@ -111,7 +120,7 @@ section.titel>.vandret_streg {
     /* gap: 10px;*/
 }
 
-.process p:nth-child(3) {
+.process p:nth-child(3), p:nth-child(4), p:nth-child(5), p:nth-child(6), p:nth-child(7) {
     margin-top: 10px;
 }
 
@@ -149,10 +158,20 @@ section.titel>.vandret_streg {
 #design_dok {
     grid-column: 2/3;
 }
+#design_dok_buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 /*spil forklaring*/
 #spil_forklaring {
     grid-column: 2/3;
+}
+#forklaring_billed{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .billed_tekst {
     display: flex;

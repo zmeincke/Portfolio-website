@@ -97,7 +97,18 @@ section.titel>.vandret_streg {
     gap: 10px;
    /*  margin: 20px; */
 }
-
+#hurtig_link {
+    display: flex;
+}
+#hurtig_link img {
+    margin-right: 10px;
+    max-width: 30px;
+    max-height: 28px;
+    align-items: center;
+}
+#hurtig_link a {
+    color: var(--sekundaer_text);
+}
 
 /*process*/
 .process {
@@ -109,7 +120,7 @@ section.titel>.vandret_streg {
     /* gap: 10px;*/
 }
 
-.process p:nth-child(3), p:nth-child(4), p:nth-child(5), p:nth-child(6) {
+.process p:nth-child(3), p:nth-child(4), p:nth-child(5), p:nth-child(6), p:nth-child(7), p:nth-child(8), p:nth-child(9), p:nth-child(10) {
     margin-top: 10px;
 }
 .process img {
