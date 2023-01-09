@@ -1,0 +1,154 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--primaer-tlf_text);
+    background-color: var(--primaer_bg);
+}
+
+img {
+    width:100%;
+    height: auto;
+    display: block
+}
+
+html {
+    /*font customproperty*/
+    --overskrift_font: 'impact';
+    --text_font: Arial, sans-serif;
+
+    /*farve customproperty*/
+    --primaer_bg: #CBC9C9;
+    --sekundaer_bg: white;
+    --gennemsigtig_bg: rgba(0, 0, 0, 0.345);
+
+    --primaer_text: white;
+    --sekundaer_text: #010101;
+    --primaer_tlf_text: #2A2A2A;
+}
+
+/*button size fix*/
+.originalProjekt_button {
+    max-width: 250px;
+}
+.originalProjekt_button p {
+    min-width: 150px;
+    font-size: 1.5rem;
+}
+
+/*site grid*/
+section#t2_del1 {
+    display: grid;
+    grid-template-columns: 0.5fr 5fr 0.5fr;
+}
+section#t2_del2 {
+    display: grid;
+    grid-template-columns: 0.5fr 5fr 0.5fr;
+}
+
+p, li {
+    font-size: 0.9rem;
+    list-style-type: none;
+}
+
+/*titel*/
+section.titel {
+    margin: 0px 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+section.titel>h1 {
+
+    font-size: 2.35rem;
+    line-height: 3rem;
+}
+
+section.titel>.vandret_streg {
+    max-width: 200px;
+    max-height: 10px;
+    margin-bottom: 10px;
+}
+
+/*to delt titel*/
+h2.todelt {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+/*billede og knap*/
+.pic_and_button {
+    grid-column: 2/3;
+
+    margin: 10px 0px 20px 0px;
+}
+.pic_and_button h2 {
+    text-align: center;
+}
+.pic_and_button img {
+    margin-bottom: 10px;
+}
+
+
+/*opgave beskrivelse*/
+.opg_besk {
+    grid-column: 2/3;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   /*  margin: 20px; */
+}
+
+
+/*process*/
+.process {
+    grid-column: 2/3;
+
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    /* gap: 10px;*/
+}
+
+.process p:nth-child(3) {
+    margin-top: 10px;
+}
+
+/*ekstra information*/
+.color {
+    grid-column: span 3;
+
+    background-color: var(--gennemsigtig_bg);
+
+    padding: 20px 0px;
+}
+.obs {
+    margin: 0px 30px;
+}
+.program_liste {
+    display: flex;
+    gap: 5px;
+}
+.program_iconer {
+    min-width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.program_iconer img {
+    max-height: 60px;
+    max-width: 60px;
+}
+.process_pic {
+    display: none;
+}

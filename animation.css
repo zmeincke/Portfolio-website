@@ -64,12 +64,14 @@ button>p {
 .originalProjekt_button span{
     display: flex;
     flex-direction: row;
-    gap: 20px;
     align-items: center;
 }
-.originalProjekt_button p {
+.originalProjekt_button span:first-child {
     min-width: 100px;
     font-size: 1.5rem;
+}
+.originalProjekt_button span:last-child{
+    padding-left: 20px;
 }
 .originalProjekt_button span>img {
     max-width: 25px;
