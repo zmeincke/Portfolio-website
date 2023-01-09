@@ -28,9 +28,7 @@ img {
     height: auto;
     display: block
 }
-main {
-    margin: 20px;
-}
+
 /* @font-face {
     font-family: "dosis";
     src: url(fonts/dosis-variablefont_wght-webfont.woff2);
@@ -76,12 +74,9 @@ button > p {
 h2 {
     font-weight: bold;
     font-stretch: condensed;
+    font-size: 1.8rem;
 }
-p.titel {
-    font-weight: bold;
-    font-stretch: condensed;
-}
-p.programmer {
+.program_iconer p {
     font-stretch: condensed;
     font-style: italic;
 }

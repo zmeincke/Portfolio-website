@@ -41,6 +41,10 @@ h1 {
     color: var(--sekundaer_text);
 }
 
+p {
+    margin: 0px 20px;
+}
+
 section#projekter>img.vandret_streg {
     max-width: 120px;
     max-height: 20px;
@@ -52,7 +56,7 @@ section#projekter>img.vandret_streg {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
-    margin: 20px 0px;
+    margin: 20px;
     text-align: center;
 }
 #bokse a {

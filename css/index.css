@@ -21,7 +21,9 @@ img {
 
 html {
     /*font customproperty*/
-    --overskrift_font: impact;
+    --overskrift_font: 'impact';
+    --text_font: Arial, sans-serif;
+
     /*farve customproperty*/
     --primaer_bg: #CBC9C9;
     --sekundaer_bg: white;

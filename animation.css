@@ -17,6 +17,22 @@ img {
     display: block
 }
 
+html {
+    /*font customproperty*/
+    --overskrift_font: 'impact';
+    --text_font: Arial, sans-serif;
+
+    /*farve customproperty*/
+    --primaer_bg: #CBC9C9;
+    --sekundaer_bg: white;
+    --gennemsigtig_bg: rgb(0,0,0,21);
+
+    --primaer_text: white;
+    --sekundaer_text: #010101;
+    --primaer_tlf_text: #2A2A2A;
+}
+
+/*Foride knapper*/
 #pp_buttons a {
     padding: 25px 70px;
     border-radius: 50px;
@@ -30,3 +46,34 @@ img {
 button>p {
     font-size: 2rem;
 }
+
+/*Tidlidere projekt knapper på undersder*/
+.originalProjekt_button {
+    display: flex;
+
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(to top right, #5D5D5D 0%,#BDBDBD 50%, white 100%);
+    padding: 5px 25px;
+
+    text-decoration: none;
+    color: var(--primaer_tlf_text);
+
+    max-width: 200px;
+}
+.originalProjekt_button span{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.originalProjekt_button p {
+    min-width: 100px;
+    font-size: 1.5rem;
+}
+.originalProjekt_button span>img {
+    max-width: 25px;
+    max-height: 25px;
+}
+/*gå til knapper på undersder*/
+/*download knapper på undersder*/
