@@ -1,0 +1,145 @@
+/*generel styling*/
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "bungeeshade-reg";
+    src: url(bungeeshade-regular-webfont.woff2);
+    }
+body {
+    /*color def.*/
+    --primary-bg-color: #382E2E;
+    --secondary-bg-color: #433B3B;
+    --head_foot-bg-color: #2DA79F;
+    --mojito-text: #D5F9C7;
+    --gin_hass-text: #FFEB72;
+    --frozen_daq-text: #F38484;
+    /*font def.*/
+    --text-font: segoe print;
+    --text-font2: segoe script;
+    --h1-font: bungeeshade-reg;
+
+    font-family: var(--text-font);
+    line-height: 1.6;
+    color: white;
+    background-color: var(--primary-bg-color);
+}
+
+/*Nav. bar styling*/
+header {
+    background-color: var(--head_foot-bg-color);
+}
+nav>ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*footer styling*/
+footer {
+    background-color: var(--head_foot-bg-color);
+    color: #2e837d;
+}
+
+/*text styling*/
+h1{
+    font-family: var(--h1-font);
+    text-align: center;
+    font-size: 2rem;
+}
+@media (min-width: 600px) {
+    h1{
+        font-size: 5rem;
+    }
+}
+h2 {
+    color: var(--mojito-text);
+    font-family: var(--text-font2);
+}
+
+img {
+    width:100%;
+    height: auto;
+    display: block
+}
+
+/*forside style*/
+@media (min-width:600px) {
+    section.forside {
+        border: none;
+        padding: 10px;
+        border-radius: 15%;
+        background-color: var(--secondary-bg-color);
+    }
+}
+@media (max-width:600px) {
+    section.forside {
+        border: none;
+        padding: 10px;
+        border-radius: 15%;
+        background-color: var(--primary-bg-color);
+    }
+}
+
+/*Mojito layout*/
+/*Gin Hass layout*/
+/*Frozen Daq. layout*/
+.mojito {
+    color: var(--mojito-text);
+}
+.gin_hass {
+    color: var(--gin_hass-text);
+}
+.frozen_daq {
+    color: var(--frozen_daq-text);
+}
+@media (min-width:600px) {
+    .fremgangsmåde .text {
+        border: none;
+        padding: 10px 50px;
+        border-radius: 15%;
+        background-color: var(--secondary-bg-color);
+    }
+    .god_til {
+        border: none;
+        padding: 20px;
+        border-radius: 15%;
+        background-color: var(--secondary-bg-color);
+    }
+}
+@media (max-width:600px) {
+    section {
+        border: none;
+        padding: 5px 25px 25px 25px;
+        border-radius: 3%;
+        background-color: var(--secondary-bg-color);
+    }
+    .intro {
+        border: none;
+        padding: 25px 25px 25px 25px;
+        border-radius: 3%;
+        background-color: var(--secondary-bg-color);
+    }
+    .intro img {
+        border-radius: 15%;
+    }
+    h1.box {
+        border: none;
+        padding: 25px 0px 25px 0px;
+        margin: 0px 15px;
+        border-radius: 3%;
+        background-color: var(--secondary-bg-color);
+    }
+}
+ol {
+    display: grid;
+    gap: 11px;
+    margin-bottom: 10px;
+}
+.fremgangsmåde p {
+    margin-bottom: 10px;
+}

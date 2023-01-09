@@ -1,0 +1,87 @@
+* {
+    margin:0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: white;
+    background-color: black;
+    margin:20px;
+}
+
+img {
+    width:100%;
+    height: auto;
+    display: block;
+}
+
+/*header/nav bar design*/
+nav>ul {
+    list-style-type: none;
+}
+/*end*/
+/*link design*/
+a {
+    text-decoration: none;
+}
+a.eksternt-link {
+    text-decoration: underline;
+    color: rgb(255, 0, 119);
+}
+/*end*/
+
+
+/*text design*/
+@font-face {
+    font-family: "lobster";
+    src: url(fonts/lobster-regular-webfont.woff2);
+}
+
+.overskrift {
+    color:rgb(208, 40, 79);
+    font-family: lobster;
+    font-size: 40px;
+}
+.underoverskrift {
+    color:rgba(209, 49, 86, 0.8);
+    border-bottom: 5px solid rgba(209, 49, 86, 0.4);
+    border-bottom-style: double;
+}
+h3 {
+    color: rgba(209, 49, 86, 0.6);
+}
+.text {
+    color:white;
+}
+
+section p {
+    color: black;
+}
+
+a {
+    color: white;
+}
+
+dd {
+    color: rgb(175, 175, 175);
+}
+
+footer {
+    color:rgba(208, 40, 79, 0.437)
+}
+/*end*/
+
+/*button desing*/
+.trykvidere {
+    border: solid 8px;
+    background-color: rgba(204, 24, 84);
+    border-color: rgb(204, 24, 84, 0.5);
+    border-radius: 5%;
+    margin: 10px 0px 10px 0px;
+    width: fit-content;
+    display:block;
+}
+/*end*/

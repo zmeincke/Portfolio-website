@@ -55,6 +55,10 @@ section#projekter>img.vandret_streg {
     margin: 20px 0px;
     text-align: center;
 }
+#bokse a {
+    text-decoration: none;
+    color: var(--primaer_text);
+}
 
 .boks {
     border: 5px solid var(--sekundaer_text);
