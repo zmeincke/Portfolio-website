@@ -1,0 +1,32 @@
+/* .banner {
+    background: #5000ca22;
+    padding: 2rem;
+  
+    
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px 40px;
+  } */
+  
+  .main-menu ul {
+    list-style: none;
+    padding: 0;
+  
+    /* 2. Få elementerne til at stå ved siden af hinanden */
+    display: flex;
+    /* gap: 1rem; */
+  }
+  
+  /* burgermenu */
+  .toggle-btn {
+    background: transparent;
+    border: none;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    display: none;
+    padding: 30px;
+  }

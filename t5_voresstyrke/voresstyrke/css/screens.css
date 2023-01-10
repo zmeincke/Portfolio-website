@@ -1,0 +1,125 @@
+@media (max-width: 1000px) {
+  .footer_grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    padding: 0;
+  }
+
+  .footer_grid_item3 {
+    padding: 10px 2px 40px 0px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .footer_grid_item3 h2 {
+    float: left;
+    padding-right: 8px;
+    padding-top: 4px;
+  }
+
+  .footer_link_box {
+    float: left;
+    padding: 0px 4px 0px 4px;
+  }
+
+
+  article {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 1000px) {
+  .toggle-btn {
+    display: block;
+  }
+
+  .main-menu.shown {
+    display: contents;
+  }
+
+  .main-menu ul {
+    display: none;
+  }
+
+  .main-menu.shown ul {
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+    display: flex;
+    flex-flow: column;
+    flex-basis: 100%;
+  }
+
+  .ul-menu li a {
+    font-size: 2.4rem;
+  }
+
+  #grid-singlepage-maintext {
+    grid-template-columns: 1fr;
+  }
+
+  #white-line-box {
+    margin: auto;
+    padding-top: 40px;
+  }
+
+  .bottom-text-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image-container {
+    padding: 5% 4% 2% 4%;
+  }
+
+  .italic-text {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .bottom-text {
+    padding: 0 40px 0 40px;
+  }
+}
+
+
+
+
+@media (min-width: 1200px) {
+  .ul-menu li a {
+    font-size: 1.2rem;
+    letter-spacing: 3.2px;
+  }
+  #header {
+    height: 114px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #header {
+    height: 106px;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .grid-tilbyder {
+    grid-template-columns: 1fr 1fr;
+  
+  }
+
+}
+
+
+
+
+
+
+
+/* Estefania's kode */
+@media (max-width: 1000px) {
+  #flex-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}

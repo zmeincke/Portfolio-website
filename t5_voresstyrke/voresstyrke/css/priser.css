@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: Oswald-regular;
+  font-size: 50px;
+  margin: 20px;
+  margin-top: 20px;
+}
+
+main {
+  margin: 20px;
+  padding: 10px;
+  gap: 20px;
+}
+
+p {
+  font-family: Lato-regular;
+  padding: 20px;
+}
+
+#flex-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.flex-container {
+  padding: 20px;
+}
+
+@media (max-width: 860px) {
+  #flex-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+.price {
+  font-family: Lato-regular;
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header {
+  font-family: Oswald-regular;
+}
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  background-color: grey;
+  color: var(--brand-color-main);
+  transition: 1s;
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: var(--brand-color-main);
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 1s;
+}
+
+@media only screen and (max-width: 860px) {
+  .columns {
+    width: 100%;
+  }
+}
+.faq-body {
+  display: none;
+}
+
+.faq-plus {
+  float: right;
+  cursor: pointer;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.faq-body.show {
+  display: block;
+}

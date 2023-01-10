@@ -1,0 +1,202 @@
+main {
+  margin: 20px;
+  padding: 10px;
+  gap: 20px;
+  max-width: 1000px;
+}
+
+h1 {
+  font-family: Oswald-regular;
+  font-size: 50px;
+  margin: 20px;
+  line-height: 1.25;
+}
+
+h3 {
+  font-family: Oswald-regular;
+  font-size: 30px;
+  margin: 10px;
+  line-height: 1.25;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 20px;
+}
+
+.p2,
+.p1 {
+  font-family: Lato-regular;
+  color: #5a5a5b;
+  gap: 10px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+p {
+  font-family: Lato-regular;
+  color: #5a5a5b;
+  gap: 10px;
+}
+
+strong {
+  color: #5e854b;
+}
+
+.wrapper {
+  padding-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.container {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  align-items: baseline;
+}
+
+.box1 {
+  height: 140px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #d3d4d3;
+}
+
+.box1 > p {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.box2 {
+  height: 140px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #5e854b;
+}
+
+.box3 {
+  height: 140px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #5a5a5b;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr;
+  margin: 20px;
+  gap: 10px;
+}
+
+.box2 > p > a {
+  color: #d3d4d3;
+  font-size: 20px;
+}
+
+a {
+  color: #5e854b;
+}
+
+.wrapper > a {
+  color: #d3d4d3;
+}
+
+.box1 :hover,
+.box2 :hover,
+.box3 :hover {
+  transform: scale(1.03);
+  letter-spacing: 1px;
+}
+
+/* Dine styles her */
+form {
+  padding: 30px;
+  background-color: #757576;
+  border-radius: 8px;
+  font-family: lato-regular;
+  margin: 20px;
+}
+
+label,
+input,
+select,
+h3,
+textarea {
+  display: block;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  /*margin: 8px 0;*/
+  box-sizing: border-box;
+}
+
+input[type="e-mail"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+}
+
+.from-felt {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 30px;
+  gap: 2rem;
+  padding: 10px;
+}
+
+button {
+  margin-top: 20px;
+  font-family: lato-regular;
+  color: black;
+  background-color: #5e854b;
+}
+
+#form > h3 {
+  color: black;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+figure {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 20px;
+}
+
+@media (max-width: 860px) {
+  .info {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 600px) {
+  .wrapper {
+    padding: 20px;
+  }
+}
