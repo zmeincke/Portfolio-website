@@ -77,6 +77,9 @@ button>p {
     max-width: 25px;
     max-height: 25px;
 }
+.originalProjekt_button:hover {
+    box-shadow: -5px 5px 5px var(--gennemsigtig_bg);
+}
 /*gå til knapper på undersder*/
 .goto_button {
     display: flex;
@@ -107,6 +110,9 @@ button>p {
     max-width: 25px;
     max-height: 20px;
 }
+.goto_button:hover {
+    box-shadow: -5px 5px 5px var(--gennemsigtig_bg);
+}
 /*download knapper på undersder*/
 .download_button {
     display: flex;
@@ -136,4 +142,7 @@ button>p {
 .download_button span>img {
     max-width: 25px;
     max-height: 20px;
+}
+.download_button:hover {
+    box-shadow: -5px 5px 5px var(--gennemsigtig_bg);
 }
