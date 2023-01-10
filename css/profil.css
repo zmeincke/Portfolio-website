@@ -145,6 +145,18 @@ figure.lower {
 .download_knap p {
     color: #010101;
 }
+.hurtig_link {
+    display: flex;
+}
+.hurtig_link img {
+    margin-right: 10px;
+    max-width: 30px;
+    max-height: 28px;
+    align-items: center;
+}
+.hurtig_link a {
+    color: #010101;
+}
 
 #om_mig, #privat_liv {
     display: grid;
@@ -283,6 +295,18 @@ figure.lower {
     
     .download_knap {
         display: flex;
+    }
+    .hurtig_link {
+        display: flex;
+    }
+    .hurtig_link img {
+        margin-right: 10px;
+        max-width: 30px;
+        max-height: 28px;
+        align-items: center;
+    }
+    .hurtig_link a {
+        color: #010101;
     }
     
     #om_mig, #privat_liv {
