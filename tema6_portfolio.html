@@ -16,8 +16,7 @@
     <body>
         <header> 
             <nav id="main_menu">
-                <button class="toggle_button"></button>
-                <div id="logo"><a href="index.html"><img src="img/favicon.svg" alt="logo"></a></div>
+                <button class="toggle_button display_none_pc"></button>
                 <ul class="ul_menu">
                     <li><a href="index.html">Forside</a></li>
                     <li><a href="profil.html">Profil</a></li>
@@ -28,8 +27,9 @@
                     <li><a class="menu_t" href="tema3_ux.html">T3: UX</a></li>
                     <li><a class="menu_t" href="tema4_animation.html">T4: Animation</a></li>
                     <li><a class="menu_t" href="tema5_indhold.html">T5: Indhold</a></li>
-                    <li><a class="menu_t" href="tema6_portfolio.html">T6: Portfolio</a></li>
+                    <li><a class="menu_t active" href="tema6_portfolio.html">T6: Portfolio</a></li>
                 </ul>
+                <div id="logo"><a href="index.html"><img src="img/favicon.svg" alt="logo"></a></div>
             </nav>  
         </header>
     
@@ -158,9 +158,12 @@
                             Jeg kan dog sige at det er anderledes måde at læse op på. Ved at lave denne opgave har jeg set tilbage på semesteret og genopfrisket ting jeg havde glemt, men det er også meget ekstra arbejde. Jeg tror stadig jeg foretrækker at skulle skrive en opsummering efter hvert forløb mens erindringen var frisk, da der nok er noget af processen som jeg har glemt og ikke kunne se tilbage på.
                         </p>
                     </div>
+                    <figure id="use_t6_pc" class="process_pic display_none_tlf" >
+                        <img src="img/process_standing.svg" alt="process">
+                    </figure>
                 </aside>
             </div>
-            <section id="t6_layoudiagram">
+            <section id="t6_layoutdiagram">
                 <h2>layoutdiagram</h2>
                 <p>(m. indflydelse fra wireframe diagram)</p>
                 <div id="t6_billede_text">
@@ -171,6 +174,10 @@
                     </p>
                 </div>
             </section>
+            <div id="tidlig_prototype" class="display_none_tlf">
+                <h2>Første Prototype</h2>
+                <img src="img/tildlig_ux_prototype.webp" alt="tidlig_ux_prototype_screendump">
+            </div>
         </main>
     
         <footer>

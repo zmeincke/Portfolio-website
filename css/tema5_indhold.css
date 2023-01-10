@@ -25,11 +25,14 @@ html {
     /*farve customproperty*/
     --primaer_bg: #CBC9C9;
     --sekundaer_bg: white;
-    --gennemsigtig_bg: rgba(0, 0, 0, 0.345);
+    --primaer_pc_bg: #BBB8B8;
+    --sekundaer_pc_bg: white;
+    --gennemsigtig_bg: rgb(0,0,0,0.345);
 
     --primaer_text: white;
-    --sekundaer_text: #010101;
+    --sekundaer_text: #333333;
     --primaer_tlf_text: #2A2A2A;
+    --primaer_pc_text: #414141;
 }
 
 /*button size fix*/
@@ -108,7 +111,7 @@ h2.todelt {
 .pic_and_button h2 {
     text-align: center;
 }
-.pic_and_button img {
+.pic_and_button>img {
     margin-bottom: 10px;
 }
 
@@ -197,6 +200,16 @@ h2.todelt {
 
 
 @media (min-width: 600px) {
+    h2, h3 {
+        color: var(--sekundaer_text);
+    }
+    p {
+        color: var(--primaer_pc_text);
+    }
+    aside, aside p, aside h2, aside h3 {
+        color: var(--primaer_text);
+    }
+
     /*site grid*/
     main#tema5 {
         display: grid;
@@ -227,9 +240,9 @@ h2.todelt {
         grid-column: 2/5;
         grid-row: 1/2;
 
-        display: flex;
-        flex-direction: row;
         align-items: flex-start;
+        max-width: none;
+        text-align: left;
 
         margin-bottom: 10px;
         margin-left: 0px;
@@ -273,14 +286,15 @@ h2.todelt {
         max-height: 300px;
     
         border: 0px;
-        background-color: var(--sekundaer_text);
+        background-color: #010101;
     }
 
     /*opgave beskrivelse*/
-   /*  .opg_besk {
-        grid-column: 1/2;
-        grid-row: 3/4; 
-    } */
+   .opg_besk {
+        min-width: 194.2px;
+        /* grid-column: 1/2;
+        grid-row: 3/4;  */
+    } 
 
 
     /*process*/

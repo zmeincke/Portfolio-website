@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: var(--sekundaer_text);
+    color: var(--primaer_tlf_text);
     background-color: var(--primaer_bg);
 }
 
@@ -23,11 +23,12 @@ html {
     /*farve customproperty*/
     --primaer_bg: #CBC9C9;
     --sekundaer_bg: white;
-    --gennemsigtig_bg: rgb(0,0,0,21);
+    --gennemsigtig_bg: rgb(0,0,0,0.345);
 
     --primaer_text: white;
-    --sekundaer_text: #010101;
+    --sekundaer_text: #333333;
     --primaer_tlf_text: #2A2A2A;
+    --primaer_pc_text: #414141;
 }
 
 h1 {
@@ -160,4 +161,149 @@ figure.lower {
     font-style: italic;
     font-size: 1rem;
     margin: 5px 0px;
+}
+
+
+/*------------------------pc-------------------------*/
+
+@media (min-width: 600px) {
+    body {
+        line-height: 1.6;
+        color: var(--primaer_tlf_text);
+    }
+    h2, h3 {
+        color: var(--sekundaer_text);
+    }
+    p {
+        color: var(--primaer_pc_text);
+    }
+    
+    /*site grid*/
+    main#side2_profil {
+        display: grid;
+        grid-template-columns: 0.5fr 1.50fr 2.50fr 1.50fr;
+    }
+
+    /*titel*/
+    section#profil {
+        grid-column: 3/4;
+        grid-row: 1/2;
+
+        color: var(--primaer_text);
+
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        align-items: left;
+        text-align: left;
+    }
+    #profil p {
+        color: var(--primaer_text);
+    }
+    h1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-size: 4rem;
+        margin-bottom: 25px;
+    }
+    
+    .navn_stud {
+        grid-column: 3/4;
+        grid-row: 1/2;
+     
+        margin: 0px 20px 15px 0px;
+    }
+    .navn_stud h2, .navn_stud h3 {
+        color: var(--primaer_text);
+    }
+
+    .lodret_streg{
+        display: contents;
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    /*potræt*/
+    #potraet_pc {
+        display: contents;
+    }
+    #potraet_pc img {
+        grid-column: 2/3;
+        grid-row: 1/3;
+
+        max-height: 350px;
+        max-width: 350px;
+
+        margin-bottom: 10px;
+    }
+
+    /*info rubrik*/
+    #privat_information {
+        grid-column: 2/3;
+        grid-row: 3/4;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0px 20px;
+    }
+    
+    #privat_information li {
+        list-style-type: none;
+    }
+    
+    #type, #svar{
+        display: flex;
+        flex-flow: column;
+        gap: 20px;
+    }
+
+
+    /*certifikater*/
+    #vigtige_papirer {
+        grid-column: 2/3;
+        grid-row: 4/5;
+
+        display: flex;
+        flex-flow: column;
+    
+        margin: 20px;
+
+        border: 2px dotted var(--primaer_tlf_text);
+        padding: 15px 0px 5px 10px;
+    }
+    
+    .download_icon {
+        max-width: 40px;
+    }
+    
+    .download_knap {
+        display: flex;
+    }
+    
+    #om_mig, #privat_liv {
+        display: grid;
+        grid-template-columns: 0.2fr 2fr;
+    
+        margin: 10px 20px;
+    }
+    
+    /*tekster*/
+    #begge_tekster {
+        grid-column: 3/4;
+        grid-row: span 3;
+    }
+    
+    .tekster_profil h4 {
+        grid-column: span 2;
+        font-size: 1.5rem;
+    }
+    
+    .tekster_profil p {
+        grid-column: 2/3;
+        font-stretch: condensed;
+        font-style: italic;
+        font-size: 1rem;
+        margin: 5px 0px;
+    }
 }

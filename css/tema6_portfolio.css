@@ -25,11 +25,14 @@ html {
     /*farve customproperty*/
     --primaer_bg: #CBC9C9;
     --sekundaer_bg: white;
-    --gennemsigtig_bg: rgba(0, 0, 0, 0.345);
+    --primaer_pc_bg: #BBB8B8;
+    --sekundaer_pc_bg: white;
+    --gennemsigtig_bg: rgb(0,0,0,0.345);
 
     --primaer_text: white;
-    --sekundaer_text: #010101;
+    --sekundaer_text: #333333;
     --primaer_tlf_text: #2A2A2A;
+    --primaer_pc_text: #414141;
 }
 
 /*button size fix*/
@@ -106,7 +109,7 @@ h2.todelt {
 .pic_and_button h2 {
     text-align: center;
 }
-.pic_and_button img {
+.pic_and_button>img {
     margin-bottom: 10px;
 }
 
@@ -188,7 +191,161 @@ h2.todelt {
 }
 
 /*layoutdiagram*/
-section#t6_layoudiagram {
+section#t6_layoutdiagram {
     grid-column: 2/3;
     text-align: center;
+}
+
+
+
+/*---------------------pc-------------------*/
+@media (min-width: 600px) {
+    h2, h3 {
+        color: var(--sekundaer_text);
+    }
+    p {
+        color: var(--primaer_pc_text);
+    }
+    aside, aside p, aside h2, aside h3 {
+        color: var(--primaer_text);
+    }
+
+    main#tema6 {
+        display: grid;
+        grid-template-columns: 0.5fr 2.5fr 2.5fr 0.5fr;
+        gap: 20px;
+    }
+    
+    /*titel*/
+    section.titel {
+        grid-column: 2/5;
+        grid-row: 1/2;
+
+        align-items: flex-start;
+        max-width: none;
+        text-align: left;
+
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+    
+    section.titel>h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    
+    section.titel>.vandret_streg {
+        display: none;
+    }
+    
+    /*billed og knap*/
+    .pic_and_button {
+        grid-column: 2/3;
+        grid-row: 2/4;
+    
+        margin: 10px 0px;
+    }
+
+    
+    /*opgave beskrivelse og krav*/
+    .opg_besk {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    
+    
+    /*process*/
+    .process {
+        /* grid-column: 2/3; */
+        grid-column: 3/4;
+        grid-row: 3/6;
+    
+        margin-bottom: 0px;
+    }
+    
+    .process p:nth-child(3), p:nth-child(4), p:nth-child(5), p:nth-child(6) {
+        margin-top: 20px;
+    }
+    
+    /*ekstra information*/
+    .color {
+        grid-column: 1/5;
+        grid-row: 6/7;
+    
+        padding: 20px 0px;
+
+        display: grid;
+        grid-template-columns: 0.5fr 2.5fr 2.5fr 0.5fr;
+    }
+    .obs {
+        grid-column: 2/4;
+        margin: 0px 30px;
+        max-width: none;
+
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 2fr;
+    }
+    .medvirkende {
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+        margin-left: 15px;
+    }
+    .programmer {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .programmer h2{
+        margin-left: 15px;
+    }
+    .program_liste {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 350px;
+    }
+    .nyt {
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
+    #use_t6_pc {
+        display: contents;
+    }
+    #use_t6_pc img{
+        grid-column: 2/3;
+        grid-row: 1/3;
+
+        max-height: 300px;
+    }
+
+
+    /*layoutdiagram*/
+    #t6_layoutdiagram {
+        grid-column: 2/3;
+        grid-row: 5/6;
+
+        margin: 15px 0px 25px 0px;
+    }
+    #t6_billede_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #t6_billede_text img{
+        max-width: 450px;
+    }
+
+    /*tidligere prototype*/
+    #tidlig_prototype {
+        grid-column: 2/3;
+        grid-row: 4/5;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 15px 0px 25px 0px;
+    }
+    #tidlig_prototype img {
+        max-width: 450px;
+    }
 }

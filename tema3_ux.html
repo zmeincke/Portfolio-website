@@ -16,8 +16,7 @@
     <body>
         <header> 
             <nav id="main_menu">
-                <button class="toggle_button"></button>
-                <div id="logo"><a href="index.html"><img src="img/favicon.svg" alt="logo"></a></div>
+                <button class="toggle_button display_none_pc"></button>
                 <ul class="ul_menu">
                     <li><a href="index.html">Forside</a></li>
                     <li><a href="profil.html">Profil</a></li>
@@ -25,11 +24,12 @@
                     <li><p>-</p></li>
                     <li><a class="menu_t" href="tema1_intro.html">T1: Intro</a></li>
                     <li><a class="menu_t" href="tema2_web.html">T2: Web</a></li>
-                    <li><a class="menu_t" href="tema3_ux.html">T3: UX</a></li>
+                    <li><a class="menu_t active" href="tema3_ux.html">T3: UX</a></li>
                     <li><a class="menu_t" href="tema4_animation.html">T4: Animation</a></li>
                     <li><a class="menu_t" href="tema5_indhold.html">T5: Indhold</a></li>
                     <li><a class="menu_t" href="tema6_portfolio.html">T6: Portfolio</a></li>
                 </ul>
+                <div id="logo"><a href="index.html"><img src="img/favicon.svg" alt="logo"></a></div>
             </nav>  
         </header>
     
@@ -122,9 +122,11 @@
                     </span>
                 </a>
             </section>
+            <figure id="use_t3_pc" class="process_pic display_none_tlf" >
+                <img src="img/process_horizontal.svg" alt="process">
+            </figure>
             <div class="color">
                 <aside class="obs">
-                    <img class="process_pic display_none_tlf" src="img/process_horizontal.svg" alt="process">
                     <div class="medvirkende">
                         <div class="oevrige">
                             <h2>Medvirkende</h2>

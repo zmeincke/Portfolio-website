@@ -23,11 +23,12 @@ html {
     /*farve customproperty*/
     --primaer_bg: #CBC9C9;
     --sekundaer_bg: white;
-    --gennemsigtig_bg: rgb(0,0,0,21);
+    --gennemsigtig_bg: rgb(0,0,0,0.345);
 
     --primaer_text: white;
-    --sekundaer_text: #010101;
+    --sekundaer_text: #333333;
     --primaer_tlf_text: #2A2A2A;
+    --primaer_pc_text: #414141;
 }
 
 section#projekter {
@@ -38,7 +39,7 @@ section#projekter {
 }
 
 h1 {
-    color: var(--sekundaer_text);
+    color: var(--primaer_tlf_text);
 }
 
 p {
@@ -90,4 +91,82 @@ section#projekter>img.vandret_streg {
     margin: 20px 0px 15px 0px;
 
     /* max-height: 50px; */
+}
+
+
+
+/*------------------------pc-------------------------*/
+
+@media (min-width: 600px) {    
+    h1 {
+        color: #010101;
+    }
+    p {
+        color: var(--primaer_text);
+    }
+    /*site grid*/
+    main#side3_projekter {
+        display: grid;
+        grid-template-columns: 0.5fr 5fr 0.5fr;
+    }
+
+    /*titel*/
+    section#projekter {
+        grid-column: 2/3;
+
+        text-align: left;
+        align-items: flex-start;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    p {
+        margin: 0px;
+        font-size: 1.2rem;
+    }
+    section#projekter>img.vandret_streg {
+        display: none;
+    }
+    
+    /*bokse*/
+    #bokse {
+        grid-column: 2/3;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin: 20px 30px 20px 0px;
+        text-align: center;
+        max-width: 1000px;
+    }
+    #bokse a {
+        text-decoration: none;
+        color: var(--primaer_text)
+    }
+    
+    .boks {
+        border: 5px solid #010101;
+        padding: 10px 10px;
+        border-radius: 20px;
+    
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .boks h2 {
+        font-size: 3rem;
+    
+        max-height: 90px;
+    }
+    
+    .boks p {
+        font-size: 2rem;
+        line-height: 2rem;
+        margin: 20px 0px 20px 0px;
+    
+        /* max-height: 50px; */
+    }
+
 }

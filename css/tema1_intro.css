@@ -19,17 +19,16 @@ img {
 
 html {
     /*font customproperty*/
-    --overskrift_font: 'impact';
-    --text_font: Arial, sans-serif;
-
-    /*farve customproperty*/
     --primaer_bg: #CBC9C9;
     --sekundaer_bg: white;
-    --gennemsigtig_bg: rgba(0, 0, 0, 0.345);
+    --primaer_pc_bg: #BBB8B8;
+    --sekundaer_pc_bg: white;
+    --gennemsigtig_bg: rgb(0,0,0,0.345);
 
     --primaer_text: white;
-    --sekundaer_text: #010101;
+    --sekundaer_text: #333333;
     --primaer_tlf_text: #2A2A2A;
+    --primaer_pc_text: #414141;
 }
 
 main#tema1 {
@@ -141,6 +140,17 @@ section.titel>.vandret_streg {
 /*------------------------pc-------------------------*/
 
 @media (min-width: 600px) {
+    h2, h3 {
+        color: var(--sekundaer_text);
+    }
+    p {
+        color: var(--primaer_pc_text);
+    }
+    aside, aside p, aside h2, aside h3 {
+        color: var(--primaer_text);
+    }
+
+    /*site grid*/
     main#tema1 {
         display: grid;
         grid-template-columns: 0.5fr 2fr 1fr 2fr 0.5fr;
@@ -155,7 +165,7 @@ section.titel>.vandret_streg {
     }
     
     section.titel>h1 {
-        font-size: 2.35rem;
+        font-size: 3rem;
         line-height: 3rem;
     }
     

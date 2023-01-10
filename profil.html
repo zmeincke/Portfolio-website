@@ -13,23 +13,30 @@
         
         <title>Portfolio</title>
     </head>
-    <body>
+    <body class="m_svale">
         <header> 
             <nav id="main_menu">
-                <button class="toggle_button"></button>
-                <div id="logo"><a href="index.html"><img src="img/favicon.svg" alt="logo"></a></div>
+                <button class="toggle_button display_none_pc"></button>
                 <ul class="ul_menu">
                     <li><a href="index.html">Forside</a></li>
-                    <li><a href="profil.html">Profil</a></li>
+                    <li><a class="active" href="profil.html">Profil</a></li>
                     <li><a href="projekter.html">Projekter</a></li>
+                    <li><p>-</p></li>
+                    <li><a class="menu_t" href="tema1_intro.html">T1: Intro</a></li>
+                    <li><a class="menu_t" href="tema2_web.html">T2: Web</a></li>
+                    <li><a class="menu_t" href="tema3_ux.html">T3: UX</a></li>
+                    <li><a class="menu_t" href="tema4_animation.html">T4: Animation</a></li>
+                    <li><a class="menu_t" href="tema5_indhold.html">T5: Indhold</a></li>
+                    <li><a class="menu_t" href="tema6_portfolio.html">T6: Portfolio</a></li>
                 </ul>
+                <div id="logo"><a href="index.html"><img src="img/favicon.svg" alt="logo"></a></div>
             </nav>  
         </header>
     
         <main id="side2_profil">
             <section id="profil">
                 <h1>Profil</h1>
-                <img class="vandret_streg" src="img/streg_dark.svg" alt="streg">
+                <img class="vandret_streg display_none_pc" src="img/streg_dark.svg" alt="streg">
                 <p class="lodret_streg"> | </p>
                 <img id="potraet_mobil" class="display_none_pc" src="img/potraert1.webp" alt="profil_pic"> <!--fjern fra pc-->
                 <div class="navn_stud">
@@ -37,8 +44,8 @@
                     <h3>KEA, Multimediedesign</h3>
                 </div>
             </section>
-            <figure class="display_none_tlf"> <!--fjern fra mobil-->
-                <img id="potraet_pc" src="img/potraert1.webp" alt="profil_pic">
+            <figure id="potraet_pc" class="display_none_tlf"> <!--fjern fra mobil-->
+                <img src="img/potraert1.webp" alt="profil_pic">
             </figure>
             <div id="privat_information">
                 <figure class="opdeler upper display_none_pc"> <!--fjern fra pc-->
@@ -72,7 +79,7 @@
                         <li>+45 40473077</li>
                     </ul>
                 </div>
-                <figure class="opdeler lower">
+                <figure class="opdeler lower display_none_pc">
                     <img src="img/streg_dark.svg" alt="streg">
                 </figure>
             </div>
@@ -86,30 +93,32 @@
                     <p>Download Karekterblad HTX</p>
                 </div>
             </div>
-            <section id="om_mig" class="tekster_profil">
-                <h4>"Lad mig præsentere mig selv"</h4>
-                <p>
-                    Jeg er en ung pige på 21, der elsker at være både kreativ og aktiv.
-                </p>
-                <p> 
-                    Det meste af mit liv har jeg bestræbet mig på, at udfolde og forbedre mig i min kreative kunnen.
-                </p>
-                <p>
-                    Dette har ført mig til at studere multimediedesign på københavns erhvers akademi hvor jeg både finder nye bekendtskaber og ny viden, som jeg i sidste ende vil tage med når jeg engang skal ud på arbejdsmarked.
-                </p>
-                <p>
-                    Jeg er så heldig at kunne blande min kreativitet og forkærlighed for natur I forbindelse med spejder, som jeg har engageret mig for siden jeg var helt lille og til den dag i dag.
-                </p>
-            </section>
-            <section id="privat_liv" class="tekster_profil">
-                <h4>"Sådan er mit privat liv"</h4>
-                <p>
-                    Min familie er hvad man ville betragte som en klassisk kernefamilie med ældre traditioner. Vi er ikke en stor familie men det gør kun at vi har et tættere sammenhold og nærvær end mange andre familier.
-                </p>
-                <p>
-                    For mig er det vigtigt at dyrke familien og holde fast i traditioner, men der skal samtidig være plads til det nye og jeg afholder mig ikke fra at kaste mig ud i det ukendte.
-                </p>
-            </section>
+            <div id="begge_tekster">
+                <section id="om_mig" class="tekster_profil">
+                    <h4>"Lad mig præsentere mig selv"</h4>
+                    <p>
+                        Jeg er en ung pige på 21, der elsker at være både kreativ og aktiv.
+                    </p>
+                    <p> 
+                        Det meste af mit liv har jeg bestræbet mig på, at udfolde og forbedre mig i min kreative kunnen.
+                    </p>
+                    <p>
+                        Dette har ført mig til at studere multimediedesign på københavns erhvers akademi hvor jeg både finder nye bekendtskaber og ny viden, som jeg i sidste ende vil tage med når jeg engang skal ud på arbejdsmarked.
+                    </p>
+                    <p>
+                        Jeg er så heldig at kunne blande min kreativitet og forkærlighed for natur I forbindelse med spejder, som jeg har engageret mig for siden jeg var helt lille og til den dag i dag.
+                    </p>
+                </section>
+                <section id="privat_liv" class="tekster_profil">
+                    <h4>"Sådan er mit privat liv"</h4>
+                    <p>
+                        Min familie er hvad man ville betragte som en klassisk kernefamilie med ældre traditioner. Vi er ikke en stor familie men det gør kun at vi har et tættere sammenhold og nærvær end mange andre familier.
+                    </p>
+                    <p>
+                        For mig er det vigtigt at dyrke familien og holde fast i traditioner, men der skal samtidig være plads til det nye og jeg afholder mig ikke fra at kaste mig ud i det ukendte.
+                    </p>
+                </section>
+            </div>
         </main>
     
         <footer>

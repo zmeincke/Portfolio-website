@@ -16,8 +16,7 @@
     <body>
         <header> 
             <nav id="main_menu">
-                <button class="toggle_button"></button>
-                <div id="logo"><a href="index.html"><img src="img/favicon.svg" alt="logo"></a></div>
+                <button class="toggle_button display_none_pc"></button>
                 <ul class="ul_menu">
                     <li><a href="index.html">Forside</a></li>
                     <li><a href="profil.html">Profil</a></li>
@@ -26,11 +25,12 @@
                     <li><a class="menu_t" href="tema1_intro.html">T1: Intro</a></li>
                     <li><a class="menu_t" href="tema2_web.html">T2: Web</a></li>
                     <li><a class="menu_t" href="tema3_ux.html">T3: UX</a></li>
-                    <li><a class="menu_t" href="tema4_animation.html">T4: Animation</a></li>
+                    <li><a class="menu_t active" href="tema4_animation.html">T4: Animation</a></li>
                     <li><a class="menu_t" href="tema5_indhold.html">T5: Indhold</a></li>
                     <li><a class="menu_t" href="tema6_portfolio.html">T6: Portfolio</a></li>
                 </ul>
-            </nav>  
+                <div id="logo"><a href="index.html"><img src="img/favicon.svg" alt="logo"></a></div>
+            </nav>   
         </header>
     
         <main id="tema4">
@@ -56,6 +56,9 @@
                     Et interaktivt animeret spil, som du har designet og programeret. <br>
                     Et website som udover selve spillet, indeholder din dokumentation af spillet
                 </p>
+                <figure id="use_t4_pc" class="process_pic display_none_tlf" >
+                    <img src="img/process_horizontal.svg" alt="process">
+                </figure>
             </div>
             <section class="process">
                 <h2>Process</h2>
@@ -139,50 +142,50 @@
                         </p>
                     </div>
                 </aside>
-                <section id="design_dok">
-                    <h2>Design - Dokumentation</h2>
-                    <div id="design_dok_buttons">
-                        <a class="download_button" href="t4_animation/zasia_skitser_på_design.pdf"> 
-                            <span>
-                                Download skitser
-                            </span>
-                            <span>
-                                <img src="img/icon_download.svg" alt="download_icon">
-                            </span>
-                        </a>
-                        <a class="download_button" href="t4_animation/04_animation_flowchart.drawio.png"> 
-                            <span>
-                                Download Aktivitets Diagram
-                            </span>
-                            <span>
-                                <img src="img/icon_download.svg" alt="download_icon">
-                            </span>
-                        </a>
-                    </div>
-                    <section id="spil_forklaring">
-                        <h2>Spil forklaring</h2>
-                        <div id="forklaring_billed">
-                            <div class="billed_text">
-                                <img src="img/fall_from_bag.webp" alt="pic1">
-                                <p>Konceptet er at der er muligheder for flere baner, man tildeles derfor en bane (madvane) I opgaven har jeg valgt lactose intolerance.</p>
-                            </div>
-                            <div class="billed_text">
-                                <img src="img/how_to.webp" alt="pic2">
-                                <p>Ui elementerne falder fra toppen af skærmen så det ligner man hælder ny indkøbte vare ud af "netto" posen.</p>
-                            </div>
-                            <div class="billed_text">
-                                <img src="img/good_bad.webp" alt="pic3">
-                                <p>
-                                    Ui elementerne er tildelt forskellige animationer så ledes at de gode elementer flyve ud til munden i højre side af skærmen og de dårlige ryster og fader ud ned ad mod bunden af skærmen.
-                                </p>
-                                <p>
-                                    På den måde får man en ide om at de gode bliver spist og de dårliges er forkert da animationen ligger opad en konvention.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                </section>
             </div>
+            <section id="design_dok">
+                <h2>Design - Dokumentation</h2>
+                <div id="design_dok_buttons">
+                    <a class="download_button" href="t4_animation/zasia_skitser_på_design.pdf"> 
+                        <span>
+                            Download skitser
+                        </span>
+                        <span>
+                            <img src="img/icon_download.svg" alt="download_icon">
+                        </span>
+                    </a>
+                    <a class="download_button" href="t4_animation/04_animation_flowchart.drawio.png"> 
+                        <span>
+                            Download Aktivitets Diagram
+                        </span>
+                        <span>
+                            <img src="img/icon_download.svg" alt="download_icon">
+                        </span>
+                    </a>
+                </div>
+            </section>
+            <section id="spil_forklaring">
+                <h2>Spil forklaring</h2>
+                <div id="forklaring_billed">
+                    <div class="billed_text">
+                        <img src="img/fall_from_bag.webp" alt="pic1">
+                        <p>Konceptet er at der er muligheder for flere baner, man tildeles derfor en bane (madvane) I opgaven har jeg valgt lactose intolerance.</p>
+                    </div>
+                    <div class="billed_text">
+                        <img src="img/how_to.webp" alt="pic2">
+                        <p>Ui elementerne falder fra toppen af skærmen så det ligner man hælder ny indkøbte vare ud af "netto" posen.</p>
+                    </div>
+                    <div class="billed_text">
+                        <img src="img/good_bad.webp" alt="pic3">
+                        <p>
+                            Ui elementerne er tildelt forskellige animationer så ledes at de gode elementer flyve ud til munden i højre side af skærmen og de dårlige ryster og fader ud ned ad mod bunden af skærmen.
+                        </p>
+                        <p>
+                            På den måde får man en ide om at de gode bliver spist og de dårliges er forkert da animationen ligger opad en konvention.
+                        </p>
+                    </div>
+                </div>
+            </section>
         </main>
     
         <footer>
