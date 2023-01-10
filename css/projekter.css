@@ -39,7 +39,7 @@ section#projekter {
 }
 
 h1 {
-    color: var(--primaer_tlf_text);
+    color: #010101;
 }
 
 p {
@@ -66,7 +66,7 @@ section#projekter>img.vandret_streg {
 }
 
 .boks {
-    border: 5px solid var(--sekundaer_text);
+    border: 5px solid #010101;
     padding: 5px 10px;
     border-radius: 20px;
 

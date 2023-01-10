@@ -46,27 +46,31 @@ html {
     --gennemsigtig_bg: rgb(0,0,0,0.345);
 
     --primaer_text: white;
-    --sekundaer_text: #010101;
+    --sekundaer_text: #333333;
     --primaer_tlf_text: #2A2A2A;
     --primaer_pc_text: #505050;
 }
 
 /*primæresider font*/
 h1 {
+    color: #010101;
     font-family: var(--overskrift_font);
     font-size: 3rem;
 }
 .navn_stud > h2 {
+    color: #010101;
     font-weight: bold;
     font-stretch: condensed;
     font-size: 1.5rem;
 }
 .navn_stud > h3 {
+    color: #010101;
     font-stretch: condensed;
     font-style: italic;
     font-size: 0.9rem;
 }
 h4 { 
+    color: #010101;
     font-weight: bold;
     font-stretch: condensed;
 }
@@ -188,6 +192,20 @@ h3 {
        background-attachment: fixed;
        background-repeat: no-repeat;
        background-image: url(img/sal_m_svale.svg);
+       background-size: cover;
+    }
+    body#forside_bg {
+        line-height: 1.6;
+        color: var(--primaer_text);
+        background-color: var(--primaer_bg);
+
+       /*background pic pc*/
+       height: 100%;
+       width: 100%;
+       aspect-ratio: 16/1;
+       background-attachment: fixed;
+       background-repeat: no-repeat;
+       background-image: url(img/dark_arch.svg);
        background-size: cover;
     }
     body.m_hvid_svale {

@@ -142,6 +142,9 @@ figure.lower {
 .download_knap {
     display: flex;
 }
+.download_knap p {
+    color: #010101;
+}
 
 #om_mig, #privat_liv {
     display: grid;
@@ -171,6 +174,7 @@ figure.lower {
         line-height: 1.6;
         color: var(--primaer_tlf_text);
     }
+
     h2, h3 {
         color: var(--sekundaer_text);
     }
@@ -199,7 +203,7 @@ figure.lower {
         text-align: left;
     }
     #profil p {
-        color: var(--primaer_text);
+        color: #010101;
     }
     h1 {
         grid-column: 1/2;
@@ -215,7 +219,7 @@ figure.lower {
         margin: 0px 20px 15px 0px;
     }
     .navn_stud h2, .navn_stud h3 {
-        color: var(--primaer_text);
+        color: #010101;
     }
 
     .lodret_streg{

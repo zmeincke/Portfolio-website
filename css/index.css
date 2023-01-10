@@ -109,24 +109,36 @@ button#projekter {
     
         /*placering*/
         position: absolute;
-        top: 5%;
-        left: 5%;
+        top: 10%;
+        left: 10%;
     }
     h1 {
         grid-column: 1/2;
+        color: var(--primaer_text);
     }
-    .lodret_streg {
+    #forside_streg {
         grid-column: 2/3;
-    
-        font-size: 4rem;
+        display: block;
+        font-size: 5rem;
     }
     .vandret_streg {
         display: none;
     }
     .navn_stud {
         grid-column: 3/4;
+        grid-row: 1/2;
     
-        display: grid;
-        grid-template-rows: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .navn_stud h2, .navn_stud h3 {
+        color: var(--primaer_text);
+    }
+    #pp_buttons {    
+        /*placering*/
+        position: absolute;
+        top: 40%;
+        left: 15%;
     }
 }
