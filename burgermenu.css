@@ -20,7 +20,7 @@
   
    .icon_menu {
      border: none;
-     background-image: url(img/burgermenu.svg);
+     background-image: url(img/burgermenu_icon.svg);
      background-color: rgba(255, 255, 255, 0);
    /*   aspect-ratio: 13/1; */
      aspect-ratio: 2/1.4;
@@ -33,7 +33,7 @@
  
    .icon_exit {
      border: none;
-     background-image: url(img/exit.svg);
+     background-image: url(img/exit_icon.svg);
      background-color: rgba(0, 0, 0, 0.642);
      aspect-ratio: 2/1.8;
      width: 100%;
