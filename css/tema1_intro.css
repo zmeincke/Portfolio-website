@@ -136,3 +136,91 @@ section.titel>.vandret_streg {
 .process_pic {
     display: none;
 }
+
+
+/*------------------------pc-------------------------*/
+
+@media (min-width: 600px) {
+    main#tema1 {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 1fr 2fr 0.5fr;
+        gap: 20px;
+    }
+    
+    /*titel*/
+    section.titel {
+        grid-column: 2/5;
+        grid-row: 1/2;
+        align-items: flex-start;
+    }
+    
+    section.titel>h1 {
+        font-size: 2.35rem;
+        line-height: 3rem;
+    }
+    
+    section.titel>.vandret_streg {
+        display: none;
+    }
+    
+    /*video og knap*/
+    #t1_video_and_button {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    
+        margin: 10px 0px;
+    }
+    
+    #t1_video>iframe {
+        max-width: 545px;
+        max-height: 305px;
+    
+        border: 0px;
+    }
+    
+    /*opgave beskrivelse og krav*/
+    #t1_opg_intro {
+        grid-column: 3/5;
+        grid-row: 2/3;
+    }
+    
+    
+    /*process*/
+    .process {
+        /* grid-column: 2/3; */
+        grid-column: 2/4;
+        grid-row: 3/4;
+    
+        margin-bottom: 20px;
+    }
+    
+    .process p:nth-child(3), p:nth-child(4), p:nth-child(5), p:nth-child(6) {
+        margin-top: 20px;
+    }
+    /* figure.process_pic {
+        grid-column: 4/5;
+        grid-row: 3/4;
+    }
+    figure.process_pic img {
+        height: 100%;
+        width: 100%;
+        aspect-ratio: 5/1;
+        object-fit: cover;
+        max-width: 50px;
+        max-height: 100px;
+    } */
+    
+    /*ekstra information*/
+    .color {
+        grid-column: 4/5;
+        grid-row: 3/4;
+    
+        padding: 20px 0px;
+        border-radius: 30px;
+    }
+    .obs {
+        grid-column: 4/5;
+        grid-row: 3/4;
+        margin: 0px 30px;
+    }
+}

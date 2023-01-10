@@ -120,7 +120,7 @@ h2.todelt {
     /* gap: 10px;*/
 }
 
-.process p:nth-child(3) {
+.process p:nth-child(3), p:nth-child(4), p:nth-child(5) {
     margin-top: 10px;
 }
 
@@ -151,4 +151,123 @@ h2.todelt {
 }
 .process_pic {
     display: none;
+}
+
+
+
+/*------------------------pc-------------------------*/
+
+
+@media (min-width: 600px) {
+    /*site grid*/
+    main#tema2 {
+        display: grid;
+        grid-template-columns: 0.5fr 2.5fr 2.5fr 0.5fr;
+    }
+
+    section#t2_del1 {
+        grid-column: 2/3;
+        /*display: grid;
+        grid-template-columns: 1fr; */
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-right: 20px;
+    }
+    section#t2_del2 {
+        grid-column: 3/4;
+        /* display: grid;
+        grid-template-columns: 1fr; */
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-left: 20px;
+    }
+
+    /*titel*/
+    section.titel {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+    
+    section.titel>h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    
+    section.titel>.vandret_streg {
+        display: none;
+    }
+
+    /*to delt titel*/
+    h2.todelt {
+        /* grid-column: 1/2;
+        grid-row: 1/2; */
+        text-align: center;
+        max-height: 40px;
+    }
+
+    /*billede og knap*/
+    /* .pic_and_button {
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+        margin: 10px 0px 20px 0px;
+    } */
+
+
+    /*opgave beskrivelse*/
+   /*  .opg_besk {
+        grid-column: 1/2;
+        grid-row: 3/4; 
+    } */
+
+
+    /*process*/
+    /* .process {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    } */
+
+    .process p:nth-child(3), p:nth-child(4), p:nth-child(5) {
+        margin-top: 20px;
+    }
+    .process a:last-child {
+        margin: 20px 0px 10px 0px;
+
+    }
+
+    /*ekstra information*/
+    .color {
+        grid-column: span 4;
+        grid-row: 3/4;
+    }
+    .obs {
+        display: grid;
+        grid-template-columns: 0.5fr 1.5fr 1fr 2.5fr 0.5fr;
+        margin: 0px 30px;
+        gap: 20px;
+    }
+
+    .medvirkende {
+        grid-column: 2/3;
+    }
+
+    .programmer {
+        grid-column: 3/4;
+    }
+    .programmer h3 {
+        margin-left: 16px;
+    }
+
+    .nyt {
+        grid-column: 4/5;
+    }
+
+    .process_pic {
+        display: none;
+    }
 }

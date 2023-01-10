@@ -41,6 +41,8 @@ html {
     /*farve customproperty*/
     --primaer_bg: #CBC9C9;
     --sekundaer_bg: white;
+    --primaer_pc_bg: #BBB8B8;
+    --sekundaer_pc_bg: white;
     --gennemsigtig_bg: rgb(0,0,0,21);
 
     --primaer_text: white;
@@ -89,13 +91,38 @@ h3 {
     font-stretch: condensed;
     font-style: italic;
 }
-
+.display_none_pc {
+    display: contents;
+    display: block;
+}
 .display_none_tlf {
     display: none;
 }
 
 @media (min-width: 600px) {
-    .display_none {
+    .display_none_pc {
         display: none;
     }
+    .display_none_tlf {
+        display: contents;
+        display: block;
+    }
+
+    body {
+        line-height: 1.6;
+        color: var(--primaer_text);
+        background-color: var(--primaer_bg);
+
+       /*background pic pc*/
+       height: 100%;
+       width: 100%;
+       aspect-ratio: 16/1;
+       background-attachment: fixed;
+       background-repeat: no-repeat;
+       background-image: url(img/full_pillar.svg);
+       background-size: cover;
+       /* overflow: hidden; */
+      /*  z-index: 1; */
+    }
+   
 }
