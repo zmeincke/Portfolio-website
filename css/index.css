@@ -140,9 +140,6 @@ button#projekter {
         flex-direction: column;
         text-align: left;
     }
-    .navn_stud h2, .navn_stud h3 {
-        color: var(--primaer_text);
-    }
     .navn_stud h2 {
         font-size: 3rem;
     }
