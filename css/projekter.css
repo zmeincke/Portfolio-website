@@ -77,15 +77,16 @@ section#projekter>img.vandret_streg {
     background: linear-gradient(to bottom, #010101 0%,#010101 45%, #01010159 45%, #01010159 100%);
 }
 
-.boks h2 {
+.boks span:first-child {
     font-family: var(--overskrift_font);
     font-size: 2.5rem;
+    text-transform: uppercase;
     color: var(--primaer_text);
 
     max-height: 50px;
 }
 
-.boks p {
+.boks span:last-child {
     font-size: 1.5rem;
     line-height: 25px;
     margin: 20px 0px 15px 0px;
@@ -146,8 +147,9 @@ section#projekter>img.vandret_streg {
     
     .boks {
         border: 5px solid #010101;
-        padding: 10px 10px;
+        padding: 10px 5px;
         border-radius: 20px;
+        max-width: 250px;
     
         display: flex;
         flex-direction: column; 
@@ -155,13 +157,13 @@ section#projekter>img.vandret_streg {
         gap: 20px;
     }
     
-    .boks h2 {
+    .boks span:first-child {
         font-size: 3rem;
     
         max-height: 90px;
     }
     
-    .boks p {
+    .boks span:last-child {
         font-size: 2rem;
         line-height: 2rem;
         margin: 20px 0px 20px 0px;

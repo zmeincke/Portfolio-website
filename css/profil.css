@@ -211,7 +211,6 @@ figure.lower {
         flex-direction: row;
         gap: 10px;
 
-        align-items: left;
         text-align: left;
     }
     #profil p {
